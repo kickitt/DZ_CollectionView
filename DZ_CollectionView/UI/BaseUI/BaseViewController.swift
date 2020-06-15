@@ -30,7 +30,7 @@ class BaseViewController: UIViewController {
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .portrait
+        return .all
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
