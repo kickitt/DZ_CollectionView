@@ -15,6 +15,9 @@
 		303BEE792492248300EEBA65 /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303BEE782492248300EEBA65 /* CollectionController.swift */; };
 		303BEE7C2493B69300EEBA65 /* OneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303BEE7B2493B69300EEBA65 /* OneCell.swift */; };
 		303BEE7E24975A0800EEBA65 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303BEE7D24975A0800EEBA65 /* BaseCell.swift */; };
+		30D5BDF724989F5D00A28FD5 /* TwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5BDF624989F5D00A28FD5 /* TwoCell.swift */; };
+		30D5BDF92498A81400A28FD5 /* ThreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5BDF82498A81400A28FD5 /* ThreeCell.swift */; };
+		30D5BDFB2498B51700A28FD5 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5BDFA2498B51700A28FD5 /* FilterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		303BEE782492248300EEBA65 /* CollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionController.swift; sourceTree = "<group>"; };
 		303BEE7B2493B69300EEBA65 /* OneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCell.swift; sourceTree = "<group>"; };
 		303BEE7D24975A0800EEBA65 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		30D5BDF624989F5D00A28FD5 /* TwoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoCell.swift; sourceTree = "<group>"; };
+		30D5BDF82498A81400A28FD5 /* ThreeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeCell.swift; sourceTree = "<group>"; };
+		30D5BDFA2498B51700A28FD5 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		303BEE712492232F00EEBA65 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				30D5BDFA2498B51700A28FD5 /* FilterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				303BEE7B2493B69300EEBA65 /* OneCell.swift */,
+				30D5BDF624989F5D00A28FD5 /* TwoCell.swift */,
+				30D5BDF82498A81400A28FD5 /* ThreeCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -185,9 +194,12 @@
 			files = (
 				303BEE7C2493B69300EEBA65 /* OneCell.swift in Sources */,
 				303BEE762492239400EEBA65 /* BaseViewController.swift in Sources */,
+				30D5BDF92498A81400A28FD5 /* ThreeCell.swift in Sources */,
+				30D5BDFB2498B51700A28FD5 /* FilterModel.swift in Sources */,
 				303BEE792492248300EEBA65 /* CollectionController.swift in Sources */,
 				303BEE5D24921DA400EEBA65 /* AppDelegate.swift in Sources */,
 				303BEE7E24975A0800EEBA65 /* BaseCell.swift in Sources */,
+				30D5BDF724989F5D00A28FD5 /* TwoCell.swift in Sources */,
 				303BEE742492237600EEBA65 /* NavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

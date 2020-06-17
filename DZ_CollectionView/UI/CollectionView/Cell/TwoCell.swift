@@ -1,16 +1,16 @@
 //
-//  OneCell.swift
+//  TwoCell.swift
 //  DZ_CollectionView
 //
-//  Created by Roman Berezin on 12.06.2020.
+//  Created by Roman Berezin on 16.06.2020.
 //  Copyright © 2020 Roman Berezin. All rights reserved.
 //
 
 import UIKit
 
-class OneCell: BaseCell {
+class TwoCell: UICollectionViewCell {
     
-    static var identifier: String = "OneCell"
+    static var identifier: String = "TwoCell"
     weak var textLabel: UILabel!
 
     override init(frame: CGRect) {
@@ -23,7 +23,7 @@ class OneCell: BaseCell {
             self.contentView.centerXAnchor.constraint(equalTo: textLabel.centerXAnchor),
             self.contentView.centerYAnchor.constraint(equalTo: textLabel.centerYAnchor),
         ])
-        self.backgroundColor = .blue
+        self.backgroundColor = .yellow
         self.textLabel = textLabel
         self.reset()
     }
@@ -41,4 +41,3 @@ class OneCell: BaseCell {
         self.textLabel.textAlignment = .center
     }
 }
-

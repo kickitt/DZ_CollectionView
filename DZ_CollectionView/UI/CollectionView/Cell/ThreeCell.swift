@@ -1,17 +1,23 @@
 //
-//  OneCell.swift
+//  ThreeCell.swift
 //  DZ_CollectionView
 //
-//  Created by Roman Berezin on 12.06.2020.
+//  Created by Roman Berezin on 16.06.2020.
 //  Copyright © 2020 Roman Berezin. All rights reserved.
 //
 
 import UIKit
 
-class OneCell: BaseCell {
+class ThreeCell: UICollectionViewCell {
     
-    static var identifier: String = "OneCell"
+    static var identifier: String = "ThreeCell"
     weak var textLabel: UILabel!
+    
+    var filter: FilterModel? {
+        didSet {
+            textLabel.text = filter?.title
+        }
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,10 +26,11 @@ class OneCell: BaseCell {
         textLabel.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(textLabel)
         NSLayoutConstraint.activate([
-            self.contentView.centerXAnchor.constraint(equalTo: textLabel.centerXAnchor),
-            self.contentView.centerYAnchor.constraint(equalTo: textLabel.centerYAnchor),
-        ])
-        self.backgroundColor = .blue
+            textLabel.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor),
+            textLabel.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 10),
+            textLabel.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -10)
+            ])
+        self.backgroundColor = .green
         self.textLabel = textLabel
         self.reset()
     }
@@ -41,4 +48,3 @@ class OneCell: BaseCell {
         self.textLabel.textAlignment = .center
     }
 }
-
